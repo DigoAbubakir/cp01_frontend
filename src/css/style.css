@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: crimson;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.btn {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.btn-entrar {
+    background-color: transparent;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+.btn-entrar:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.btn-cadastrar:hover {
+    background-color: rgb(168, 8, 40);
+    color: white;
+}
+
+
