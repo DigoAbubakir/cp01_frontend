@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #6b3f2e;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 90%;
+  max-width: 850px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.left-side {
+  flex: 1;
+  background-color: #fcfbf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.left-side img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.right-side {
+  flex: 1;
+  padding: 2.5rem 2rem;
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.form input:focus {
+  border-color: #a67c52;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(119, 59, 11, 0.2);
+}
+
+.gender-label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+  color: #444;
+}
+
+.gender-options {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="radio"]:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #a67c52;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #fff;
+    color: #a67c52;
+    border-color: #a67c52;
+  }
+
