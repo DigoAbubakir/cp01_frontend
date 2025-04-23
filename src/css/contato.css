@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6b3f2e;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a67c52;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.btn {
+    background-color: #a67c52;
+    color: white;
+    border: none;
+    padding: 0.35rem 1.0rem;
+    font-size: 0.9rem;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-entrar {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-entrar:hover {
+    background-color: #ffffff;
+    color: #a67c52;
+}
+
+.btn-cadastrar:hover {
+    background-color: #795735;
+    color: white;
+}
+
+.meio {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.formulario {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;               
+    margin: 0 auto;              
+    border: 1px solid #ddd;      
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #a67c52;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;               
+    margin-bottom: 15px;         
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+.formulario button {
+    background-color: #c39b6e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #6b3f2e;
+    border-top: 2px solid #a67c52;
+}
+
+.img {
+    margin: 0 20px;
+    text-align: right;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.icone {
+    max-width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contatos p {
+    font-size: 1rem;
+    color: #ffffff;
+}
