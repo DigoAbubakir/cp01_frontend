@@ -2,7 +2,7 @@
 
 - Página inicial com destaque para os melhores vinhos da região
 - Listagem de produtos com categorias (Tintos, Brancos, Rosés, Espumantes)
-- Página “Sobre Nós” com informações da história da vinheria
+- Página “Sobre” com informações da história da vinheria
 - Design responsivo e elegante, com uma paleta de cores baseada em tons terrosos
 - Botões de **Login** e **Cadastro** para simular o acesso do usuário
 
