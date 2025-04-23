@@ -17,4 +17,4 @@
 - **João Lucas** – RM: 562608  
 - **Rafael Felix Souza** – RM: 565855  
 - **Samuel de Oliveira da Silva** – RM: 566244
-- **Cristian Belasco** – RM:565710
+- **Cristian Belasco** – RM: 565710
