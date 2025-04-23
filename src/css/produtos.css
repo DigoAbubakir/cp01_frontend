@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  font-family: 'Poppings';
+}
+body {
+  background-color: #f9f5f0;
+  color: #3c2f2f;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #6b3f2e;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.menu-vinhos {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 10px 0;
+  background-color: #8e5c44; 
+}
+
+.menu-vinhos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-vinhos li {
+  margin: 0 15px;
+}
+
+.menu-vinhos a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu-vinhos a:hover, .menu-vinhos a.active {
+  background-color: #c39b6e;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.vinhos {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vinhos h2 {
+  color: #5a2d2d;
+  border-bottom: 2px solid #9e5b3f;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+.tabela-vinhos {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin: 0 -20px;
+}
+
+.espaco-vinhos {
+  width: 33.33%;
+  vertical-align: top;
+}
+
+.card-vinhos {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card-vinhos:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-vinhos {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.info-vinhos {
+  padding: 20px;
+  text-align: left;
+}
+
+.nome-vinho {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #5a2d2d;
+  margin-bottom: 5px;
+}
+
+.pais-vinho {
+  font-size: 0.9em;
+  color: #999;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.desc-vinho {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.preco-vinho {
+  font-size: 1.3em;
+  color: #5a2d2d;
+  font-weight: bold;
+  text-align: right;
+}
+
+footer {
+  background-color: #5a2d2d;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 900px) {
+  .espaco-vinhos {
+      width: 50%;
+      display: inline-block;
+  }
+  
+  .tabela-vinhos {
+      display: block;
+  }
+  
+  .tabela-vinhos tr {
+      display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .espaco-vinhos {
+      width: 100%;
+      display: block;
+  }
+  
+  .menu-vinhos-vinhos ul {
+      flex-direction: column;
+  }
+  
+  .menu-vinhos-vinhos li {
+      margin: 5px 0;
+  }
+}
