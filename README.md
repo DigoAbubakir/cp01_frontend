@@ -19,5 +19,5 @@
 - **Samuel de Oliveira da Silva** – RM: 566244
 - **Cristian Belasco** – RM: 565710
 
-##Link GitHub Pages
+- Link GitHub Pages:
 https://digoabubakir.github.io/vinheria-agnello/
