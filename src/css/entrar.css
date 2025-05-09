@@ -16,18 +16,24 @@ body {
 }
 
 .container {
+  position: relative;
   background-color: #ffffff;
-  display: flex;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
   width: 90%;
   max-width: 850px;
+  height: 500px;
+  margin: auto;
+  border-radius: 16px;
+  overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Lado esquerdo com imagem */
 .left-side {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
   background-color: #fcfbf8;
   display: flex;
   align-items: center;
@@ -44,8 +50,14 @@ body {
 }
 
 .right-side {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
   padding: 2.5rem 2rem;
+  overflow-y: auto;
+  background-color: #ffffff;
 }
 
 .form h2 {

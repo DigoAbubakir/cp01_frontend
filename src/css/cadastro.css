@@ -12,39 +12,50 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
+  position: relative;
   background-color: #ffffff;
-  display: flex;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  overflow: hidden;
   width: 90%;
   max-width: 850px;
+  height: 509px;
+  margin: 40px auto;
+  border-radius: 16px;
+  overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .left-side {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
   background-color: #fcfbf8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
+  text-align: center;
 }
 
 .left-side img {
-  width: 100%;
+  width: 90%;
   max-width: 450px;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
+  margin-top: 2rem;
 }
 
 .right-side {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
   padding: 2.5rem 2rem;
+  background-color: #fff;
+  overflow-y: auto;
 }
 
 .form h2 {
@@ -77,9 +88,13 @@ body {
 }
 
 .gender-options {
-  display: flex;
-  gap: 1rem;
+  position: relative;
   margin-bottom: 1.5rem;
+}
+
+.gender-options label {
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 input[type="radio"]:focus {
