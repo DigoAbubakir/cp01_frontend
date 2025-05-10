@@ -60,10 +60,23 @@ body {
   background-color: #ffffff;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .form h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #333;
+  animation: pulse 1.5s infinite ease-in-out;
 }
 
 .form input {
