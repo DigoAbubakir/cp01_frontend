@@ -98,26 +98,32 @@ input[type="checkbox"]:focus {
 .extra-options a {
   color: #a67c52;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.extra-options a:hover {
+  transform: scale(1.05);
 }
 
 .form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #a67c52;
-  color: #fff;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.form button:hover {
-  background-color: #fff;
-  color: #a67c52;
-  border-color: #a67c52;
-}
+    width: 100%;
+    padding: 10px;
+    background-color: #a67c52;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #fff;
+    color: #a67c52;
+    border-color: #a67c52;
+    transform: scale(1.05);
+  }
 
 .link-cadastro {
   text-align: center;
@@ -128,6 +134,12 @@ input[type="checkbox"]:focus {
 .link-cadastro a {
   color: #a67c52;
   text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.link-cadastro a:hover {
+  transform: scale(1.05);
 }
 
 
