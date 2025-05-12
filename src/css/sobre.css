@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+@keyframes pulsante {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 body { 
     font-family: Arial, sans-serif; 
     margin: 0px; 
-    background-color:antiquewhite;     
+     background-image: linear-gradient(to bottom, antiquewhite, rgb(116, 55, 36));
 }
 header { 
     background-color:#6b3f2e; 
@@ -15,7 +27,7 @@ header {
     margin: 0 auto 1.5rem auto;
     color: #ffffff;
     text-align: center;
-    animation: pulse 1.5s infinite ease-in-out;
+    animation: pulsante 3s infinite ease-in-out;
 }
 
 section { 
