@@ -1,0 +1,64 @@
+.logo1 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+
+.meio {
+    background-image: radial-gradient(#6b3f2e, white);
+}
+
+input[type="text"]:valid {
+    border: 2px solid #28a745;
+    background-color: #eafbe7;
+}
+
+input[type="text"]:invalid {
+    border: 2px solid #dc3545;
+    background-color: #fcebea;
+}
+
+input[type="email"]:valid {
+    border: 2px solid #28a745;
+    background-color: #eafbe7;
+}
+
+input[type="email"]:invalid {
+    border: 2px solid #dc3545;
+    background-color: #fcebea;
+}
+
+.formulario button:hover {
+    background-color: #a67c52;
+    transform: scale(1.05);
+}
+
+input[type="tel"]:valid {
+    border: 2px solid #28a745;
+    background-color: #eafbe7;
+}
+
+.icone:hover {
+    transform: rotate(30deg); 
+    transition: transform 0.5s; 
+}
+
+.logo:hover {
+    transform: rotateY(180deg); 
+    transition: transform 1s;
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.img:hover img, 
+.info:hover img {
+    animation: girar 4s linear infinite; 
+}
