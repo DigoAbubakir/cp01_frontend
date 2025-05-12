@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("efeitos_contatos.css");
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: #fff;
@@ -6,10 +8,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: #6b3f2e;
     color: rgb(255, 255, 255);
     padding: 1rem 2rem;
@@ -17,23 +17,44 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    overflow: hidden;
+}
+
+.nav-links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.navbar {
+    position: relative; 
 }
 
 .logo1 {
     font-size: 1.5rem;
     font-weight: bold;
+    float: left;
+    margin-right: 2rem;
 }
 
 .nav-links {
     list-style: none;
-    display: flex;
-    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 1.5rem;
 }
 
 .nav-links a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     transition: color 0.3s;
+    line-height: 2.5;
 }
 
 .nav-links a:hover {
@@ -41,8 +62,7 @@ body {
 }
 
 .nav-buttons {
-    display: flex;
-    gap: 0.8rem;
+    float: right;
 }
 
 .btn {
@@ -56,6 +76,8 @@ body {
     transition: background-color 0.3s;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin-left: 0.8rem;
 }
 
 .btn-entrar {
@@ -75,20 +97,21 @@ body {
 }
 
 .meio {
-    display: flex;
-    justify-content: center;
     padding: 30px;
+    text-align: center;
 }
 
 .formulario {
     max-width: 500px;
     width: 100%;
     background-color: #fff;
-    padding: 20px;               
-    margin: 0 auto;              
-    border: 1px solid #ddd;      
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
     border-radius: 8px;
     box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
 }
 
 .formulario label {
@@ -102,14 +125,13 @@ body {
 .formulario select,
 .formulario textarea {
     width: 100%;
-    padding: 10px;               
-    margin-bottom: 15px;         
+    padding: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 1rem;
     box-sizing: border-box;
 }
-
 
 .formulario button {
     background-color: #c39b6e;
@@ -119,31 +141,34 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    display: block;
+    width: 100%;
 }
 
+
 .contatos {
-    display: flex;
-    justify-content: center;
     margin-top: 30px;
     padding: 20px;
     background-color: #6b3f2e;
     border-top: 2px solid #a67c52;
+    text-align: center;
+    clear: both;
 }
 
-.img {
-    margin: 0 20px;
-    text-align: right;
-}
-
-.logo {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px;
+.info-container {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
 }
 
 .info {
+    display: inline-block;
+    vertical-align: top;
     margin: 0 20px;
+    min-width: 150px;
     text-align: center;
+    font-size: 1rem; 
 }
 
 .icone {
@@ -155,4 +180,24 @@ body {
 .contatos p {
     font-size: 1rem;
     color: #ffffff;
+    margin: 5px 0;
+}
+
+.img {
+    margin: 30px auto 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.navbar::after,
+.nav-links::after,
+.nav-buttons::after {
+    content: "";
+    display: table;
+    clear: both;
 }
