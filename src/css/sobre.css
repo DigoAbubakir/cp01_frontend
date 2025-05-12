@@ -11,6 +11,13 @@ header {
     padding: 30px; 
     text-align: center;    
 }
+.header{
+    margin: 0 auto 1.5rem auto;
+    color: #ffffff;
+    text-align: center;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
 section { 
     margin: 50px; 
     padding: 30px; 
@@ -44,9 +51,7 @@ h1{
     font-size: 65px;
     font-family:'Poppins';
 }
-#texto{
-    font-family: 'Poppins';
-}
+
 .topnav a{
     color: #fff;
     text-decoration: none;
@@ -60,9 +65,29 @@ h1{
     
 }
     .topnav a:hover{
-        background-color: #c39b6e;
-        color: #fff;
+        background-color: #9c7140;
+        color: #e7e7e7;
         transform: scale(1);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-transform: uppercase;
+        padding: 15px 30px;
     }
-    
+
+.lista {
+    font-family:'Poppins';
+}
+    .lista li:nth-child(1n + 1){
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+.listaB li:nth-child(1n + 1){
+    font-weight: lighter;
+    text-transform: none;
+} 
+
+.video:hover{
+    width: 860px;
+    height: 470px;
+    transform: translate(70px, 0px);
+}
