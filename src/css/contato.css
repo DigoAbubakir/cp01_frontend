@@ -194,10 +194,3 @@ body {
     margin-bottom: 10px;
 }
 
-.navbar::after,
-.nav-links::after,
-.nav-buttons::after {
-    content: "";
-    display: table;
-    clear: both;
-}
